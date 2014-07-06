@@ -27,5 +27,5 @@ function requestData(url, callBack)
 	xmlhttp.open("POST", url, false);
 	// Send the request
 	xmlhttp.send(null);*/
-	callBack(htmlStuff[url.slice(0,-5)]);
+	callBack(htmlStuff[url]);
 }
