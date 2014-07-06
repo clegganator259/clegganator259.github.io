@@ -1,5 +1,5 @@
 var htmlStuff = {
-	home.html: "<div class=\"header\">
+	home: "<div class=\"header\">
 <h1> Chem Access: Home </h1><div class=\"accent_image_container\"><img src=\"images/accent_images/home.png\"></div>
 </div>
 <hr>
@@ -21,13 +21,13 @@ var htmlStuff = {
 <P><B>
 Funded by an SBRI grant \"Ready Steady STEM\" through JISC TechDis.
 </B></P>" ,
-	samples.html: "<div class=\"header\">
+	samples: "<div class=\"header\">
 	<h1> Samples </h1><div class=\"accent_image_container\"><img src=\"images/accent_images/samples.png\"></div>
 </div>
 <hr>
 <p> Samples are available at this website:</p>
 <a href=\"http://www.cs.bham.ac.uk/research/groupings/reasoning/sdag/chemtest/\">Link to Samples</a>",
-	software.html: "<!-- This is pure html -->
+	software: "<!-- This is pure html -->
 	<div class=\"header\">
 	<h1> Software </h1><div class=\"accent_image_container\"><img src=\"images/accent_images/software.png\"></div>
 	</div>
@@ -39,7 +39,7 @@ Funded by an SBRI grant \"Ready Steady STEM\" through JISC TechDis.
 	  chemical diagram recognition.</li>
 	
 	</ul>",
-	events.html: "<!-- This is pure html -->
+	events: "<!-- This is pure html -->
 <div class=\"header\"
 ><h1>Events</h1><div class=\"accent_image_container\"><img src=\"images/accent_images/events.png\"/></div>
 <div>
@@ -51,7 +51,7 @@ Funded by an SBRI grant \"Ready Steady STEM\" through JISC TechDis.
       
 </ul>
 ",
-	academic_info.html: "<!-- This is pure html -->
+	academic_info: "<!-- This is pure html -->
 <div id=\"people_panel\">
 	<div class=\"header\">
 	<h1>People</h1><div class=\"accent_image_container\"><img src=\"images/accent_images/academic.png\"/></div>
@@ -139,5 +139,5 @@ function requestData(url, callBack)
 	xmlhttp.open("POST", url, false);
 	// Send the request
 	xmlhttp.send(null);*/
-	callBack(htmlStuff[url]);
+	callBack(htmlStuff[url.slice(0,-5)]);
 }
