@@ -73,5 +73,5 @@ body{
 
 @font-face{
 	font-family: "sansation";
-	src: url('fonts/sansation/Sansation_Regular.ttf') format('opentype');
+	src: url('fonts/sansation/Sansation_Regular.otf') format('opentype');
 }
