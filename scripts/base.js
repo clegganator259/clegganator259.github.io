@@ -10,7 +10,7 @@ function loadContent(index){
 	if(data_container.getAttribute("current-data") !== newPage){
 		document.title = "Chem Access: " + newPage.replace("_", " ");
 		data_container.setAttribute('current-data', newPage);
-		requestData(newPage,function (xHTML){changeContent(xHTML,colorTable[index]);});
+		requestData(newPage.toLowerCase() ,function (xHTML){changeContent(xHTML,colorTable[index]);});
 	}
 }
 
