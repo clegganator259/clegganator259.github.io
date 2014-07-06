@@ -17,7 +17,7 @@ function loadContent(index){
 function changeContent(xHTML,color){
 	var container = document.getElementById('data_container');
 	$(container).fadeTo('600',0,function() {
-		$(this).html(create_css_header(color) + xHTML.responseText).fadeTo('600',1);
+		$(this).html(create_css_header(color) + xHTML).fadeTo('600',1);
 	});
 }
 
