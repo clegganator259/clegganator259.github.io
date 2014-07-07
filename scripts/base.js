@@ -1,5 +1,6 @@
 var addressTabel = {home_link: "Home", samples_link: "Samples", software_link:"Software", events_link:"Events", academic_link: "Academic_Info"};
-var colorTable = {home_link:"#FF0000", samples_link: "#33CC33", software_link:"#0066CC", events_link:"#FFFF00",academic_link:"#7A00CC"};
+var colorTable = {home_link:"#FF0000", samples_link: "#33CC33", software_link:"#0066CC", events_link:"#FF6600
+",academic_link:"#7A00CC"};
 var css_template = '<style type="text/css">b,a{color:<<COLOR>>}</style>';
 
 
